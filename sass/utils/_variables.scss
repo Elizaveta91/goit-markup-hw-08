@@ -1,0 +1,25 @@
+
+/*Перший паршал*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --additional-color: #FFFFFF;
+    --background-color-hero: #2F303A;
+    --background-color-team: #F5F4FA;
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

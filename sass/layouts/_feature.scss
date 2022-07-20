@@ -1,0 +1,45 @@
+
+/*Восьмий паршал*/
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-team);
+    border-radius: 4px;
+
+        &__icons {
+            fill: currentColor;
+            width: 70px;
+            height: 70px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            margin-right: 30px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--title-text-color);
+        }
+
+        &__list {
+            color: var(--primary-text-color);
+            line-height: 1.7;
+        }
+    }
+
+.list {
+    display: flex;
+
+            &-box {
+            margin-right: 30px;
+        }
+}
+

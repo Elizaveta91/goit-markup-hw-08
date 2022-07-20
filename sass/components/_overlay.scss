@@ -1,0 +1,32 @@
+
+/*Чотирнадцятий паршал*/
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+        &__text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 64px 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(100%);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+            background-color: var(--accent-color);
+            color: var(--additional-color);
+            transition: var(--anim);
+        }
+    
+        .card__box:hover &__text,
+        .card__box:focus &__text {
+            transform: translateY(0);
+        }
+}

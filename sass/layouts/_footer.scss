@@ -1,0 +1,132 @@
+
+/* Шістнадцятий паршал*/
+
+/* footer */
+.container__footer {
+    display: flex;
+    align-items: baseline;
+    padding: 0 15px;
+}
+
+.footer {
+    background-color: var(--background-color-hero);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        &__list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__join {
+            margin-left: auto;
+        }
+}
+
+.contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.contact__list {
+    color: var(--additional-color);
+    text-decoration: none;
+}
+
+.item {
+    margin-bottom: 9px;
+}
+
+.logo__footer {
+    color: var(--additional-color);
+}
+
+.join {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--additional-color);
+}
+
+
+.icon__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icon__item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    color: var(--additional-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--anim);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+.footer__icons {
+    fill: var(--additional-color);
+}
+
+.footer__icons-join {
+    margin-left: 10px;
+    fill: var(--additional-color);
+}
+
+.form__sign input {
+    padding: 15px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form__sign {
+    display: flex;
+    width: 570px;
+    height: 86px;
+}
+
+.footer__button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    border: transparent;
+    text-decoration: none;
+    padding-left: 29px;
+    margin-left: 12px;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: var(--anim);
+    color: var(--additional-color);
+    background-color: var(--accent-color);
+}

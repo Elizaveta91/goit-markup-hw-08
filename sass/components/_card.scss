@@ -1,0 +1,28 @@
+
+/*Тринадцятий паршал*/
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-bottom: -30px;
+
+    &__list {
+        width: 370px;
+        box-sizing: border-box;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        display: block;
+        text-decoration: none;
+        transition: var(--anim);
+    }
+}
+
+.card__box:hover,
+.card__box:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
