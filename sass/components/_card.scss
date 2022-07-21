@@ -2,29 +2,39 @@
 /*Тринадцятий паршал*/
 
 .card {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    margin-bottom: -30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+   
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // column-gap: 30px;
+    // margin-bottom: -30px;
+
+@media screen and (min-width: 768px) {
+        padding-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
 
     &__list {
-        width: 370px;
-        box-sizing: border-box;
-        padding: 0;
-        margin-bottom: 30px;
+        // width: 370px;
+        // box-sizing: border-box;
+        // padding: 0;
+        // margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
         width: calc(100% - 2 * 30px / 2);
         margin: 15px;
         }
     }
-    }
-
-    &__box {
-        display: block;
-        text-decoration: none;
-        transition: var(--anim);
-    }
+    // &__box {
+    //     display: block;
+    //     text-decoration: none;
+    //     transition: var(--anim);
+    // }
 }
 
 .card__box:hover,
