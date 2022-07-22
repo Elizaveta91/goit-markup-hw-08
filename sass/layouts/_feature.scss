@@ -1,12 +1,28 @@
 
 /*Восьмий паршал*/
 
+.list__box {
+display: block;
+flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+    // flex-basis: calc((100% - 60px)/2);
+    width: calc(100% - 15 * 60px / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 680px;
+        width: calc(100% - 15 * 90px / 3);
+    }
+}
 .feature {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 120px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
     background-color: var(--background-color-team);
     border-radius: 4px;
 
@@ -27,6 +43,7 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--title-text-color);
+            text-align: center;
         }
 
         &__list {
@@ -35,11 +52,6 @@
         }
     }
 
-.list {
-    display: flex;
-
-            &-box {
-            margin-right: 30px;
-        }
-}
+// .list {
+//     // display: flex;
 

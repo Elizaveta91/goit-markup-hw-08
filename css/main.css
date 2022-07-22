@@ -53,7 +53,7 @@ p {
 /* Свойства для корректного отображения картинок */
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -551,6 +551,23 @@ textarea {
 }
 
 /*Восьмий паршал*/
+.list__box {
+  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .list__box {
+    width: calc(100% - 300px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list__box {
+    width: 680px;
+    width: calc(100% - 450px);
+  }
+}
+
 .feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +580,10 @@ textarea {
           justify-content: center;
   height: 120px;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
   background-color: var(--background-color-team);
   border-radius: 4px;
 }
@@ -582,19 +603,11 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  text-align: center;
 }
 .feature__list {
   color: var(--primary-text-color);
   line-height: 1.7;
-}
-
-.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.list-box {
-  margin-right: 30px;
 }
 
 /*Дев'ятий паршал*/
@@ -782,25 +795,26 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
   list-style: none;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
 }
-.client__item:not(:last-child) {
+.client__list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .client__item {
-    width: calc(100% - 30px);
-    margin: 15px;
-  }
-}
 @media screen and (min-width: 768px) {
   .client__item {
-    width: calc(100% - 30px);
-    margin: 15px;
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: 170px;
   }
 }
 
@@ -882,12 +896,6 @@ textarea {
   .card {
     padding-top: 50px;
     padding-bottom: 94px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .card__list {
-    width: calc(100% - 30px);
-    margin: 15px;
   }
 }
 
