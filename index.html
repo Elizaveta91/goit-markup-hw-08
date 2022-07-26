@@ -12,13 +12,13 @@
 </head>
 <body>
 
-    <!--Секція хедер--
+    <!--Секція хедер-->
 <header class="header__page">
     <div class="container header__main">
 <nav class="header__nav">
     <a href="./index.html" class="logo"> Web<span class="header__logo">Studio</span></a>
 
-     Мобільне меню --
+    <!--Мобільне меню--> 
 <button class="mobile-menu-btn" type="button" data-menu-button>
     <svg class="mobile-menu-icon" width="24" height="16">
         <use class="mobile-menu-burger" href="./images/icons.svg#icon-menu"></use>
@@ -77,12 +77,12 @@
             <use href="./img/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
     </ul>
     </div>
-</header>  -->
+</header> 
 
     <!-- Секція унікального контенту на сторінці  -->
 <main>
     <!-- Секція Герой  -->
-    <!-- <section class="hero">
+    <section class="hero">
     <div class="container">
 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
@@ -135,7 +135,7 @@
     <button class="modal-btn" type="submit" disabled>Отправить</button>
 </form>
     </div>
-    </div> -->
+    </div>
     
     <!-- Секція особливості  -->
 <section class="section">
@@ -179,39 +179,54 @@
 </section>
 
     <!-- Секція Чим ми займаємося  -->
-<!-- <section class="about">
+<section class="about">
     <div class="container">
     <h2 class="about__us">Чем мы занимаемся</h2>
     <ul class="list">
         <li class="work__list">
-            <img src="./img/1.jpg" alt="рассчитываем стоимость" width="370" height="294"/>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/about/1-lg.jpg 1x ./img\about\1-lg@2x.jpg 2x" type="images/jpg">
+            <img src="./img/about/1-lg.jpg" alt="рассчитываем стоимость" width="370" height="294"/>
+            </picture>
+            
             <div class="about__work">
                 <h3 class="work">Десктопные приложения</h3>
             </div>
         </li>
         <li class="work__list">
-            <img src="./img/2.jpg" alt="анализируем продвижение" width="370" height="294"/>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/about/2-lg.jpg 1x ./img\about\2-lg@2x.jpg 2x" type="images/jpg">
+              <img src="./img/about/2-lg.jpg" alt="анализируем продвижение" width="370" height="294"/>  
+            </picture>
             <div class="about__work">
                 <h3 class="work">Мобильные приложения</h3>
             </div>
         </li>
         <li class="work__list">
-            <img src="./img/3.jpg" alt="подбираем цвета" width="370" height="294"/>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/about/3-lg.jpg 1x ./img\about\3-lg@2x.jpg 2x" type="images/jpg">
+                <img src="./img/about/3-lg.jpg" alt="подбираем цвета" width="370" height="294"/>
+            </picture>
             <div class="about__work">
                 <h3 class="work">Дизайнерские решения</h3>
             </div>
         </li>
     </ul>
 </div>
-</section> -->
+</section>
 
     <!-- Секція Наша команда  -->
-<!-- <section class="team">
+<section class="team">
     <div class="container">
     <h2 class="team__title">Наша команда</h2>
     <ul class="list">
     <li class="team__list">
-        <img class="team__img" src="./img/4.jpg" alt="Игорь Демьяненко" width="270" height="260"/>
+        <picture>
+<source media="(min-width: 1200px)" srcset="./img/team/1-lg.jpg 1x ./img\team\1-lg@2x.jpg 2x" type="images/jpg">
+<source media="(min-width: 768px)" srcset="./img/team/1-md.jpg 1x ./img\team\1-md@2x.jpg 2x" type="images/jpg">
+<source media="(max-width: 767px)" srcset="./img/team/1-sm.jpg 1x ./img\team\1-sm@2x.jpg 2x" type="images/jpg">
+<img class="team__img" src="./img/team/1-sm.jpg" alt="Игорь Демьяненко" width="450" height="460"/>
+        </picture>
         <h3 class="team__name">Игорь Демьяненко</h3>
         <p class="team__job" lang="en">Product Designer</p>
     <ul class="command__icons">
@@ -234,7 +249,12 @@
     </ul>  
     </li>
     <li class="team__list">
-        <img class="team__img" src="./img/5.jpg" alt="Ольга Репина" width="270" height="260"/>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./img/team/2-lg.jpg 1x ./img\team\2-lg@2x.jpg 2x" type="images/jpg">
+            <source media="(min-width: 768px)" srcset="./img/team/2-md.jpg 1x ./img\team\2-md@2x.jpg 2x" type="images/jpg">
+            <source media="(max-width: 767px)" srcset="./img/team/2-sm.jpg 1x ./img\team\2-sm@2x.jpg 2x" type="images/jpg">
+            <img class="team__img" src="./img/team/2-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+        </picture>
         <h3 class="team__name">Ольга Репина</h3>
         <p class="team__job" lang="en">Frontend Developer</p>
         <ul class="command__icons">
@@ -257,7 +277,12 @@
     </ul>
     </li>
     <li class="team__list">
-        <img class="team__img" src="./img/6.jpg" alt="Николай Тарасов" width="270" height="260"/>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./img/team/3-lg.jpg 1x ./img\team\3-lg@2x.jpg 2x" type="images/jpg">
+            <source media="(min-width: 768px)" srcset="./img/team/3-md.jpg 1x ./img\team\3-md@2x.jpg 2x" type="images/jpg">
+            <source media="(max-width: 767px)" srcset="./img/team/3-sm.jpg 1x ./img\team\3-sm@2x.jpg 2x" type="images/jpg">
+            <img class="team__img" src="./img/team/3-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+        </picture>
         <h3 class="team__name">Николай Тарасов</h3>
         <p class="team__job" lang="en">Marketing</p>
         <ul class="command__icons">
@@ -280,7 +305,12 @@
         </ul>
     </li>
         <li class="team__list">
-        <img class="team__img" src="./img/7.jpg" alt="Михаил Ермаков" width="270" height="260"/>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./img/team/4-lg.jpg 1x ./img\team\4-lg@2x.jpg 2x" type="images/jpg">
+            <source media="(min-width: 768px)" srcset="./img/team/4-md.jpg 1x ./img\team\4-md@2x.jpg 2x" type="images/jpg">
+            <source media="(max-width: 767px)" srcset="./img/team/4-sm.jpg 1x ./img\team\4-sm@2x.jpg 2x" type="images/jpg">
+            <img class="team__img" src="./img/team/4-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+        </picture>
         <h3 class="team__name">Михаил Ермаков</h3>
         <p class="team__job" lang="en">UI Designer</p>
         <ul class="command__icons">
@@ -342,7 +372,7 @@
 </main>
 
 <!-- Секція футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
     <div class="container container__footer"> 
     <div>
         <a href="./index.html" class="logo"> Web<span class="logo__footer">Studio</span></a>
@@ -386,7 +416,7 @@
     </form>
     </div>
     </div>
-    </footer> -->
+    </footer> 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
