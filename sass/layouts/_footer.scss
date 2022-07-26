@@ -3,7 +3,7 @@
 
 /* footer */
 .container__footer {
-    display: flex;
+text-align: center;
     align-items: baseline;
     padding: 0 15px;
 }
@@ -15,6 +15,7 @@
 
         &__list {
             display: flex;
+            justify-content: center;
             list-style: none;
             padding: 0;
             margin: 0;
@@ -22,6 +23,7 @@
 
         &__join {
             margin-left: auto;
+            padding-top: 60px;
         }
 }
 
@@ -57,6 +59,7 @@
 
 .icon__item:not(:last-child) {
     margin-right: 10px;
+   
 }
 
 .icon__item-footer {
@@ -102,8 +105,6 @@
 }
 
 .form__sign {
-    display: flex;
-    width: 570px;
     height: 86px;
 }
 
@@ -114,7 +115,7 @@
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    display: flex;
+  
     align-items: center;
 
     width: 200px;

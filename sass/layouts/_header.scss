@@ -4,8 +4,8 @@
 /* Секція Хедер */
 
 header {
-    border-bottom: 1px solid #ECECEC
-
+    border-bottom: 1px solid #ECECEC;
+   
         &__page {
             background-color: var(--additional-color);
             align-items: center;
@@ -49,16 +49,31 @@ header {
     color: var(--title-text-color);
 }
 
+
 .header__list>.item:nth-child(n + 2) {
     margin-left: 50px;
 }
 
 .header__list {
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     display: flex;
     margin-left: 93px;
+
+    @media screen and (min-width: 480px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) {
+    display: block;
+    display: flex;
+}
+
+    @media screen and (min-width: 1200px) {
+    display: block;
+    display: flex;
+}
 }
 
 .head:not(:last-child) {
@@ -94,6 +109,21 @@ header {
     display: flex;
     align-items: center;
     margin-left: auto;
+
+    @media screen and (min-width: 480px) {
+            display: none;
+        }
+    
+    @media screen and (min-width: 768px) {
+            display: block;
+            
+            
+        }
+    
+    @media screen and (min-width: 1200px) {
+            display: block;
+            display: flex;
+        }
 }
 
 .head__icons {
