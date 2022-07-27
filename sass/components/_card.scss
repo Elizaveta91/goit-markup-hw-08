@@ -2,40 +2,43 @@
 /*Тринадцятий паршал*/
 
 .card {
-    padding-top: 40px;
-    padding-bottom: 60px;
-   
-
-    // display: flex;
-    // flex-wrap: wrap;
-    // column-gap: 30px;
-    // margin-bottom: -30px;
-
-@media screen and (min-width: 768px) {
-        padding-top: 30px;
-        
-}
-@media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        margin-bottom: -30px;
         padding-top: 50px;
         padding-bottom: 94px;
+        width: calc(100% - 15px * 30px / 2);}
+
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        margin-bottom: -30px;
+        padding-top: 50px;
+        padding-bottom: 94px;
+        width: calc(100% - 15px * 90px / 3);
+}
+        &__list {
+        box-sizing: border-box;
+        margin-bottom: 30px;
+}
 }
 
+.card__box {
+        text-decoration: none;
+        transition: var(--anim);
 
-// &__list {
-//         // width: 370px;
-//         // box-sizing: border-box;
-//         // padding: 0;
-//         // margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+                margin-bottom: 15px;
+                display: block;
+               }
 
-//     @media screen and (min-width: 768px) {
-//         width: 708px;}
-    
-    // &__box {
-    //     display: block;
-    //     text-decoration: none;
-    //     transition: var(--anim);
-    // }
-}
+        @media screen and (min-width: 1200px) {
+                margin-bottom: 15px;
+                display: block;
+     }}
 
 .card__box:hover,
 .card__box:focus {

@@ -1,6 +1,15 @@
 
 /*Чотирнадцятий паршал*/
 
+.overlay__text {
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }
+}
 .overlay {
     position: relative;
     overflow: hidden;
@@ -11,7 +20,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 64px 24px;
+            padding: 77px 24px;
             position: absolute;
             top: 0;
             left: 0;
@@ -24,7 +33,7 @@
             color: var(--additional-color);
             transition: var(--anim);
         }
-    
+        
         .card__box:hover &__text,
         .card__box:focus &__text {
             transform: translateY(0);
