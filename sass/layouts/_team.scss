@@ -5,6 +5,17 @@
 .team {
     @extend %section;
 }
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% - 2 * 30px / 2);
+        margin: 15px;
+    }
+}
 .team {
     color: var(--title-text-color);
     font-weight: 700;
@@ -30,18 +41,8 @@
                 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
 
-       
-        }
-}
-.list {
-    display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-   @media screen and (min-width: 768px) {
-        width: calc(100% - 2 * 30px / 2);
-        margin: 15px;}
+}}
 
-}
 .team__img {
     margin-bottom: 30px;
 }
