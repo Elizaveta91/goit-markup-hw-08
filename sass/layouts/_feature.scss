@@ -11,10 +11,11 @@
     }
 }
 
-.list {
+.list__feature {
     display: flex;
     flex-wrap: wrap; 
 }
+
 .list__box {
     margin-bottom: 30px;
     width: 450px;
@@ -36,15 +37,7 @@
             }
         }
     }
-    // @media screen and (min-width: 768px) {
-    // // flex-basis: calc((100% - 60px)/2);
-    // width: calc(100% - 15 * 60px / 3);
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     width: 680px;
-    //     width: calc(100% - 15 * 90px / 3);
-    // }
+   
 .feature {
         display: flex;
         width: 450px;
@@ -93,7 +86,3 @@
             line-height: 1.7;
         }
     }
-
-// .list {
-//     // display: flex;
-

@@ -4,11 +4,13 @@
 /* Секція Чим ми займаємося */
 
 .about {
-    @extend %section;
-    @media screen and (min-width: 480px) {
+    @extend %section;}
+
+.about {
+    @media screen and (max-width: 480px) {
             display: none;}
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
             display: none;}
 
     @media screen and (min-width: 1200px) {
@@ -54,13 +56,10 @@
     text-transform: uppercase;
     color: var(--additional-color);
 
-        &__list {
+            &__list {
             position: relative;
             padding: 0;
             display: flex;
-            
-                &:not(:last-child) {
-                        margin-right: 30px;
-                    }}
-        }
+}}
+        
         
