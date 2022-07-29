@@ -101,12 +101,17 @@ header {
 }
 
 .auht__nav {
-    @media screen and (min-width: 480px) {
-            display: none;}
+        display: none;
             
     @media screen and (min-width: 768px) {
+<<<<<<< HEAD
             display: flex;
             flex-direction: column;}
+=======
+          
+        display: flex;
+            margin-left: auto;}
+>>>>>>> c18f5eb39ed8cbda6882210ae552ed1cce25774f
 
     @media screen and (min-width: 1200px) {
             display: block;
