@@ -80,6 +80,9 @@ ul {
   border: none;
   width: 40px;
   height: 40px;
+  position: absolute;
+  top: 2%;
+  left: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,18 +363,22 @@ header__page {
 }
 @media screen and (min-width: 768px) {
   .auht__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .auht__nav {
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
   }
 }
 
@@ -821,7 +828,7 @@ textarea {
           justify-content: center;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--light-theme-bg);
+  background-color: var(--background-color-team);
   border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
@@ -852,6 +859,11 @@ textarea {
   text-transform: uppercase;
   color: var(--title-text-color);
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feature__title {
+    text-align: start;
+  }
 }
 .feature__list {
   color: var(--primary-text-color);
@@ -928,11 +940,24 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.work__list:not(:last-child) {
   margin-right: 30px;
 }
 
 /*Десятий паршал*/
 /* Наша команда */
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -940,12 +965,6 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-}
-@media screen and (min-width: 768px) {
-  .list {
-    width: calc(100% - 30px);
-    margin: 15px;
-  }
 }
 
 .team {
@@ -971,6 +990,23 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__list {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    margin-right: 30px;
+  }
+  .team__list:nth-child(2n), .team__list:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__img {

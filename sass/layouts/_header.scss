@@ -102,30 +102,22 @@ header {
 
 .auht__nav {
         display: none;
-            
+         
     @media screen and (min-width: 768px) {
-<<<<<<< HEAD
-            display: flex;
-            flex-direction: column;}
-=======
-          
-        display: flex;
-            margin-left: auto;}
->>>>>>> c18f5eb39ed8cbda6882210ae552ed1cce25774f
+        display: block;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+       margin-left: auto;
+     }
 
     @media screen and (min-width: 1200px) {
-            display: block;
             display: flex;
-        }
-                 // color: var(--primary-text-color);
-                 // font-weight: 500;
-                 // font-size: 14px;
-                 // line-height: 1.14;
-                 // letter-spacing: 0.02em;
-                 // text-decoration: none;
-                 // display: flex;
-                 // align-items: center;
-                 // margin-left: auto;
+            margin-left: auto;
+        }   
 }
 
 .head__icons {
