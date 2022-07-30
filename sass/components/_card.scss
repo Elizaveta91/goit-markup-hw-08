@@ -32,12 +32,6 @@
   transition: var(--anim);
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
-    display: block;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 15px;
     display: block;
   }
 }

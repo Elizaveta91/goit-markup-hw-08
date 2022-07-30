@@ -1223,13 +1223,6 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .card__box {
-    margin-bottom: 15px;
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__box {
-    margin-bottom: 15px;
     display: block;
   }
 }
