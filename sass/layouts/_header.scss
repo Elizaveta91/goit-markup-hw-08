@@ -3,140 +3,126 @@
 /* Секція Хедер */
 
 header {
-    border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 
-    &__page {
-        background-color: var(--additional-color);
-        align-items: center;
-    }
+  &__page {
+    background-color: var(--additional-color);
+    align-items: center;
+  }
 }
 
 .header__main {
-    display: -webkit-box;
-    align-items: center;
-}
-
-.link {
-    text-decoration: none;
-    color: var(--title-text-color);
-    display: block;
-    padding: 32px 0;
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+  display: -webkit-box;
+  align-items: center;
 }
 
 .header__nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
-
 .logo {
-    color: var(--accent-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    display: inline-block;
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .header__logo {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
-
-.header__list>.item:nth-child(n + 2) {
-    margin-left: 50px;
-}
+// .header__list > .item:nth-child(n + 2) {
+//   margin-left: 50px;
+// }
 
 .header__list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    display: flex;
-    margin-left: 93px;
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
 
-    @media screen and (min-width: 320px) {
-        display: none;
-    }
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        display: flex;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: block;
-        display: flex;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
-.head:not(:last-child) {
-    margin-right: 50px;
-    display: flex;
+.header__list-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .current {
+  position: relative;
+  color: var(--accent-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
     display: block;
-    text-decoration: none;
-    color: var(--accent-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
-    &::after {
-        content: "";
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        display: inline-block;
-        background-color: var(--accent-color);
-        border-radius: 2px;
-    }
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .auht__nav {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        color: var(--primary-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        margin-left: auto;
-       justify-content: flex-end;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-left: auto;
+  }
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        margin-left: auto;
-    }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .head__icons {
-    margin-right: 10px;
-    fill: currentColor;}
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 .mail {
-    width: 14px;
-    height: 10px;
-    
-        @media screen and(min-width:1200px) {
-            width: 16px;
-            height: 12px;}}
+  width: 14px;
+  height: 10px;
+
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .tel {
-    width: 10px;
-    height: 14px;
+  width: 10px;
+  height: 14px;
 
-    @media screen and(min-width:1200px) {
-        width: 10px;
-        height: 16px;}}
-    
+  @media screen and(min-width:1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
