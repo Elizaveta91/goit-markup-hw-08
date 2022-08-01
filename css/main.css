@@ -373,7 +373,7 @@ header__page {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1182,7 +1182,7 @@ textarea {
 /* Дванадцятий паршал*/
 /* Наші роботи, portfolio */
 .portfolio__nav {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__nav {
@@ -1191,7 +1191,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__nav {
-    text-align: center;
+    margin-bottom: 50px;
   }
 }
 
