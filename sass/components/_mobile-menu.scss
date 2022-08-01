@@ -8,9 +8,10 @@
   justify-content: space-between;
   z-index: 1000;
   margin-left: auto;
+  flex-direction: column;
 
   &:hover,
-  &:focus + .mobile-menu__icon {
+  &:focus + .mobile-menu-icon {
     fill: var(--accent-color);
   }
 
@@ -71,6 +72,9 @@
     display: none;
   }
 }
+.open {
+  color: var(--title-text-color);
+}
 
 .mobile-menu-nav {
   margin-bottom: auto;
@@ -101,7 +105,7 @@
   line-height: 28px;
   letter-spacing: 0.02em;
 
-  color: var(--primary-text-color);
+  color: var(---title-text-color);
 }
 
 .mobile-menu-contacts-item {

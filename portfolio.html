@@ -1,516 +1,362 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <!-- Секція хедер -->
-    <header class="header__page">
-      <div class="container header__main">
-        <nav class="header__nav">
-          <a href="./index.html" class="logo">
-            Web<span class="header__logo">Studio</span></a
-          >
-          <ul class="header__list">
-            <li class="header__list-item">
-              <a href="./index.html" class="header__list-link link">Студия</a>
-            </li>
-            <li class="header__list-item">
-              <a href="./portfolio.html" class="header__list-link link current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header__list-item">
-              <a href="#" class="header__list-link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="auht__nav">
-          <li class="head">
-            <a href="info@devstudio.com" class="auht__nav-link link"
-              ><svg class="head__icons mail" width="16" height="12">
-                <use href="./img/icons.svg#icon-email"></use></svg
-              >info@devstudio.com</a
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- Секція хедер -->
+  <header class="header__page">
+    <div class="container header__main">
+      <nav class="header__nav">
+        <a href="./index.html" class="logo">
+          Web<span class="header__logo">Studio</span></a>
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="./index.html" class="header__list-link link">Студия</a>
           </li>
-          <li class="head">
-            <a href="tel:+380961111111" class="auht__nav-link link"
-              ><svg class="head__icons tel" width="10" height="16">
-                <use href="./img/icons.svg#icon-tel"></use></svg
-              >+38 096 111 11 11</a
-            >
+          <li class="header__list-item">
+            <a href="./portfolio.html" class="header__list-link link current">Портфолио</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="auht__nav">
+        <li class="head">
+          <a href="info@devstudio.com" class="auht__nav-link link"><svg class="head__icons mail" width="16" height="12">
+              <use href="./img/icons.svg#icon-email"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="head">
+          <a href="tel:+380961111111" class="auht__nav-link link"><svg class="head__icons tel" width="10" height="16">
+              <use href="./img/icons.svg#icon-tel"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Секція Наші роботи -->
+  <main>
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="visually-hidden">Портфолио</h1>
+        <div class="portfolio__nav">
+          <button type="button" class="portfolio__success all">Все</button>
+          <button type="button" class="portfolio__success">Веб-сайты</button>
+          <button type="button" class="portfolio__success">Приложение</button>
+          <button type="button" class="portfolio__success">Дизайн</button>
+          <button type="button" class="portfolio__success">Маркетинг</button>
+        </div>
+        <ul class="card">
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/1-lg.jpg 1x, ./img/portfolio/1-lg@2x.jpg 2x" type="images/jpg"/>
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/1-md.jpg 1x, ./img/portfolio/1-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/1-sm.jpg 1x, ./img/portfolio/1-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/1-sm.jpg" alt="Веб-сайт" width="450" height="294"/>
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">Технокряк</h2>
+                <p class="skills__group">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/2-lg.jpg 1x, ./img/portfolio/2-lg@2x.jpg 2x" type="images/jpg"/>
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/2-md.jpg 1x, ./img/portfolio/2-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/2-sm.jpg 1x, ./img/portfolio/2-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/2-sm.jpg" alt="Веб-сайт" width="450" height="294"/>
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="skills__group">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/3-lg.jpg 1x, ./img/portfolio/3-lg@2x.jpg 2x" type="images/jpg"/>
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/3-md.jpg 1x, ./img/portfolio/3-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/3-sm.jpg 1x, ./img/portfolio/3-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/3-sm.jpg" alt="Веб-сайт" width="450" height="294"/>
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="skills__group">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/4-lg.jpg 1x, ./img/portfolio/4-lg@2x.jpg 2x" type="images/jpg"/>
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/4-md.jpg 1x, ./img/portfolio/4-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/4-sm.jpg 1x, ./img/portfolio/4-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/4-sm.jpg" alt="Веб-сайт" width="450" height="294"/>
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="skills__group">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/5-lg.jpg 1x, ./img/portfolio/5-lg@2x.jpg 2x" type="images/jpg" />
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/5-md.jpg 1x, ./img/portfolio/5-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/5-sm.jpg 1x, ./img/portfolio/5-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/5-sm.jpg" alt="Веб-сайт" width="450" height="294" />
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
+                <p class="skills__group">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/6-lg.jpg 1x, ./img/portfolio/6-lg@2x.jpg 2x" type="images/jpg" />
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/6-md.jpg 1x, ./img/portfolio/6-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/6-sm.jpg 1x, ./img/portfolio/6-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/6-sm.jpg" alt="Веб-сайт" width="450" height="294" />
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="skills__group">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/7-lg.jpg 1x, ./img/portfolio/7-lg@2x.jpg 2x" type="images/jpg"/>
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/7-md.jpg 1x, ./img/portfolio/7-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/7-sm.jpg 1x, ./img/portfolio/7-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/7-sm.jpg" alt="Веб-сайт" width="450" height="294"/>
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="skills__group">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/8-lg.jpg 1x, ./img/portfolio/8-lg@2x.jpg 2x" type="images/jpg"/>
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/8-md.jpg 1x, ./img/portfolio/8-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/8-sm.jpg 1x, ./img/portfolio/8-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/8-sm.jpg" alt="Веб-сайт" width="450" height="294" />
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card">
+                  Проект <span lang="en">LAB</span>
+                </h2>
+                <p class="skills__group">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card__list">
+            <a class="card__box card__box--grow" href="">
+              <div class="overlay">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/portfolio/9-lg.jpg 1x, ./img/portfolio/9-lg@2x.jpg 2x" type="images/jpg" />
+                  <source media="(min-width: 768px)" srcset="./img/portfolio/9-md.jpg 1x, ./img/portfolio/9-md@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <source media="(max-width: 767px)" srcset="./img/portfolio/9-sm.jpg 1x, ./img/portfolio/9-sm@2x.jpg 2x"
+                    type="images/jpg"/>
+                  <img src="./img/portfolio/9-sm.jpg" alt="Веб-сайт" width="450" height="294" />
+                </picture>
+                <p class="overlay__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__card" lang="en">Growing Business</h2>
+                <p class="skills__group">Приложение</p>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
-    </header>
+    </section>
+  </main>
 
-    <!-- Секція Наші роботи -->
-    <main>
-      <section class="portfolio">
-        <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
-          <div class="portfolio__nav">
-            <button type="button" class="portfolio__success all">Все</button>
-            <button type="button" class="portfolio__success">Веб-сайты</button>
-            <button type="button" class="portfolio__success">Приложение</button>
-            <button type="button" class="portfolio__success">Дизайн</button>
-            <button type="button" class="portfolio__success">Маркетинг</button>
-          </div>
-          <ul class="card">
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\1-lg.jpg 1x ./img\portfolio\1-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\1-md.jpg 1x ./img\portfolio\1-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\1-sm.jpg 1x ./img\portfolio\1-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/1-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">Технокряк</h2>
-                  <p class="skills__group">Веб-сайт</p>
-                </div>
-              </a>
+  <!-- Секція футер -->
+  <footer class="footer">
+    <div class="container container__footer">
+      <div class="container__footer-logo">
+        <a href="./index.html" class="logo-link link">
+          Web<span class="logo__footer">Studio</span></a>
+        <address class="contact">
+          <ul class="footer__link">
+            <li class="item">
+              <a href="https://goo.gl/maps/J9fnGw7j8aF3vUGx8" target="_blank" rel="noopener noreferrer"
+                class="contact__list">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\2-lg.jpg 1x ./img\portfolio\2-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\2-md.jpg 1x ./img\portfolio\2-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\2-sm.jpg 1x ./img\portfolio\2-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/2-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">
-                    Постер <span lang="en">New Orlean vs Golden Star</span>
-                  </h2>
-                  <p class="skills__group">Дизайн</p>
-                </div>
-              </a>
+            <li class="item">
+              <a href="mailto:info@example.com" class="contact">info@example.com</a>
             </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\3-lg.jpg 1x ./img\portfolio\3-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\3-md.jpg 1x ./img\portfolio\3-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\3-sm.jpg 1x ./img\portfolio\3-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/3-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">
-                    Ресторан <span lang="en">Seafood</span>
-                  </h2>
-                  <p class="skills__group">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\4-lg.jpg 1x ./img\portfolio\4-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\4-md.jpg 1x ./img\portfolio\4-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\4-sm.jpg 1x ./img\portfolio\4-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/4-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">
-                    Проект <span lang="en">Prime</span>
-                  </h2>
-                  <p class="skills__group">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\5-lg.jpg 1x ./img\portfolio\5-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\5-md.jpg 1x ./img\portfolio\5-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\5-sm.jpg 1x ./img\portfolio\5-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/5-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">
-                    Проект <span lang="en">Boxes</span>
-                  </h2>
-                  <p class="skills__group">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\6-lg.jpg 1x ./img\portfolio\6-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\6-md.jpg 1x ./img\portfolio\6-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\6-sm.jpg 1x ./img\portfolio\6-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/6-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card" lang="en">
-                    Inspiration has no Borders
-                  </h2>
-                  <p class="skills__group">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\7-lg.jpg 1x ./img\portfolio\7-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\7-md.jpg 1x ./img\portfolio\7-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\7-sm.jpg 1x ./img\portfolio\7-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/7-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">
-                    Издание <span lang="en">Limited Edition</span>
-                  </h2>
-                  <p class="skills__group">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\8-lg.jpg 1x ./img\portfolio\8-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\8-md.jpg 1x ./img\portfolio\8-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\8-sm.jpg 1x ./img\portfolio\8-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/8-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card">
-                    Проект <span lang="en">LAB</span>
-                  </h2>
-                  <p class="skills__group">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="card__list">
-              <a class="card__box card__box--grow" href="">
-                <div class="overlay">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="./img\portfolio\9-lg.jpg 1x ./img\portfolio\9-lg@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="./img\portfolio\9-md.jpg 1x ./img\portfolio\9-md@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="./img\portfolio\9-sm.jpg 1x ./img\portfolio\9-sm@2x.jpg 2x"
-                      type="images/jpg"
-                    />
-                    <img
-                      src="./img/portfolio/9-sm.jpg"
-                      alt="Веб-сайт"
-                      width="450"
-                      height="294"
-                    />
-                  </picture>
-                  <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-                <div class="skills">
-                  <h2 class="skills__card" lang="en">Growing Business</h2>
-                  <p class="skills__group">Приложение</p>
-                </div>
-              </a>
+            <li class="item">
+              <a href="tel:+380991111111"></a>+38 099 111 11 11
             </li>
           </ul>
-        </div>
-      </section>
-    </main>
-
-    <!-- Секція футер -->
-    <footer class="footer">
-      <div class="container container__footer">
-        <div class="container__footer-logo">
-          <a href="./index.html" class="logo-link link">
-            Web<span class="logo__footer">Studio</span></a
-          >
-          <address class="contact">
-            <ul class="footer__link">
-              <li class="item">
-                <a
-                  href="https://goo.gl/maps/J9fnGw7j8aF3vUGx8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__list"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="item">
-                <a href="mailto:info@example.com" class="contact"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="item">
-                <a href="tel:+380991111111"></a>+38 099 111 11 11
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer__join">
-          <strong class="join">присоединяйтесь</strong>
-          <ul class="footer__list">
-            <li class="icon__item">
-              <a class="icon__item-footer" href=""
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram-footer"></use></svg
-              ></a>
-            </li>
-            <li class="icon__item">
-              <a class="icon__item-footer" href=""
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-twitter-footer"></use></svg
-              ></a>
-            </li>
-            <li class="icon__item">
-              <a class="icon__item-footer" href=""
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook-footer"></use></svg
-              ></a>
-            </li>
-            <li class="icon__item">
-              <a class="icon__item-footer" href=""
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin-footer"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__join-form">
-          <strong class="join">Подпишитесь на рассылку</strong>
-          <form class="form__sign">
-            <label for="user_email"></label>
-            <input
-              class="form__sign-input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="user_email"
-            />
-            <button type="submit" class="footer__button">
-              Подписаться<svg class="footer__icons-join" width="24" height="24">
-                <use href="./img/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+        </address>
       </div>
-    </footer>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
-  </body>
+      <div class="footer__join">
+        <strong class="join">присоединяйтесь</strong>
+        <ul class="footer__list">
+          <li class="icon__item">
+            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
+                <use href="./img/icons.svg#icon-instagram-footer"></use>
+              </svg></a>
+          </li>
+          <li class="icon__item">
+            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
+                <use href="./img/icons.svg#icon-twitter-footer"></use>
+              </svg></a>
+          </li>
+          <li class="icon__item">
+            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
+                <use href="./img/icons.svg#icon-facebook-footer"></use>
+              </svg></a>
+          </li>
+          <li class="icon__item">
+            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
+                <use href="./img/icons.svg#icon-linkedin-footer"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__join-form">
+        <strong class="join">Подпишитесь на рассылку</strong>
+        <form class="form__sign">
+          <label for="user_email"></label>
+          <input class="form__sign-input" type="email" name="email" placeholder="E-mail" id="user_email" />
+          <button type="submit" class="footer__button">
+            Подписаться<svg class="footer__icons-join" width="24" height="24">
+              <use href="./img/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
 </html>

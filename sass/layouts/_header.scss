@@ -33,15 +33,16 @@ header {
   line-height: 1.2;
   text-decoration: none;
   display: inline-block;
+  padding: 19px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;;
+    }
 }
 
 .header__logo {
   color: var(--title-text-color);
 }
-
-// .header__list > .item:nth-child(n + 2) {
-//   margin-left: 50px;
-// }
 
 .header__list {
   display: flex;
@@ -61,6 +62,7 @@ header {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--title-text-color);
 }
 
 .current {
@@ -99,6 +101,7 @@ header {
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     gap: 50px;
+    align-items: center;
   }
 }
 

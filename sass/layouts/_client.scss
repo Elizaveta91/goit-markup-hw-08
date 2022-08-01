@@ -5,23 +5,24 @@
 .client {
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.19;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-        &__list {
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            font-size: 32px;
+            line-height: 1.16;
+        }}
+
+.client__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    list-style: none;
+    list-style: none;}
 
-        &__item:not(:last-child) {
-            margin-right: 30px;
-        }
-}
-}
 
 .client__link {
     display: flex;
