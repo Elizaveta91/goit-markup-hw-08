@@ -1342,13 +1342,6 @@ textarea {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-@media screen and (min-width: 768px) {
-  .skills {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-}
 .skills__card {
   margin-bottom: 4px;
   margin-right: auto;
@@ -1363,6 +1356,14 @@ textarea {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+  .skills--grow {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 /* Шістнадцятий паршал*/
