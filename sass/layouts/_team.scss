@@ -14,12 +14,14 @@
 }
 
 .team__title-list {
+    margin-top: -30px;
+    margin-left: -30px;
+    
     @media screen and (min-width: 768px) {
      display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: -30px;
-    margin-left: -30px;
+    
 }}
 
 .team {

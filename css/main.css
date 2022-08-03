@@ -812,6 +812,10 @@ textarea {
   }
 }
 
+.list__feature {
+  margin-top: -30px;
+  margin-left: -30px;
+}
 @media screen and (min-width: 768px) {
   .list__feature {
     display: -webkit-box;
@@ -819,8 +823,6 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
   }
 }
 
@@ -974,6 +976,10 @@ textarea {
   }
 }
 
+.team__title-list {
+  margin-top: -30px;
+  margin-left: -30px;
+}
 @media screen and (min-width: 768px) {
   .team__title-list {
     display: -webkit-box;
@@ -982,8 +988,6 @@ textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style: none;
-    margin-top: -30px;
-    margin-left: -30px;
   }
 }
 
